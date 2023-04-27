@@ -22,7 +22,8 @@ function renderHeader() {
 
     // voltar para pagina incial e consultar outro usuario
     userBtn.addEventListener('click', () => {
-        location.replace('/index.html')
+        localStorage.removeItem('user')
+        location.replace('../../index.html')
     })
 
     console.log(user)

@@ -2,7 +2,8 @@ function returnSeach() {
     const btn = document.querySelector('button')
 
     btn.addEventListener('click', () => {
-        location.replace('/index.html')
+        localStorage.removeItem('user')
+        location.replace('../../index.html')
     })
 }
 
