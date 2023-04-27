@@ -19,12 +19,12 @@ function checkUser() {
         const user = await getUser(input.value)
 
         if (user.message === 'Not Found') {
-            window.location.href = 'http://127.0.0.1:5500/src/pages/error.html'
+            window.location.replace('/src/pages/error.html')
         } else {
             const jsonStr = JSON.stringify(user)
             localStorage.setItem('user', jsonStr)
 
-            window.location.href = 'http://127.0.0.1:5500/src/pages/profile.html'
+            window.location.replace('/src/pages/profile.html')
         }
 
     })

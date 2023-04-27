@@ -22,7 +22,7 @@ function renderHeader() {
 
     // voltar para pagina incial e consultar outro usuario
     userBtn.addEventListener('click', () => {
-        window.location.href = 'http://127.0.0.1:5500/index.html'
+        window.location.replace('/index.html')
     })
 
     console.log(user)
