@@ -19,12 +19,12 @@ function checkUser() {
         const user = await getUser(input.value)
 
         if (user.message === 'Not Found') {
-            location.replace('../../src/pages/error.html')
+            location.replace('./src/pages/error.html')
         } else {
             const jsonStr = JSON.stringify(user)
             localStorage.setItem('user', jsonStr)
 
-            location.replace('../../src/pages/profile.html ')
+            location.replace('./src/pages/profile.html ')
         }
 
     })
